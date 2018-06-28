@@ -1,0 +1,92 @@
+<!-- <Doctype html> -->
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/php; charset=utf-8" />
+        <title>Trivia Game</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">  
+        
+    
+    </head>
+
+    <body>
+
+        <h1><img src="assets/images/flag.png">Naturalization Test<img src="assets/images/flag.png"> </h1>
+
+        <div id="start">
+
+                <p id="intro">This is the test required of all immigrants if they want to become American citizens! The same one I took June of 2017. <u>Can you pass it?</u></p>
+
+                <button type="button" class="btn btn-primary" id="B1">Start!</button>
+
+        </div>
+
+        <div id="questions">
+
+            
+
+            <p id="tr">Time Remaining: <span id="timeRem"></span></p>
+
+            <p id="Q1">1) Who is the chief justice of the Supreme Court? <input type="radio" name="CJ" value="C" class ="q1">John Roberts
+                <input type="radio" name="CJ" value="F" class ="q1"> Neil Goursuch <input type="radio" name="CJ" value="F" class ="q1"> Ruth Bader Ginsburg</p>
+
+            <p id="Q2">2) Who elects the President of the United States? <input type="radio" name="voting" value="F" class="q2">The Senate
+                <input type="radio" name="voting" value="F" class="q2"> The Citizens <input type="radio" name="voting" value="C" class="q2"> Delegates of the Electoral College</p>
+
+            <p id="Q3">3) If the President and the VP are unable to serve, who is next in the line of succession? <input type="radio" name="succesion" value="C" class ="q3">Speaker of the House
+                <input type="radio" name="succesion" value="F" class ="q3"> Secretary of Defense  <br><input type="radio" name="succesion" value="F" class ="q3"> Secretary of State</p>
+        
+            <p id="Q4">4) Who is the commander-in-chief of our military? <input type="radio" name="military" value="F" class ="q4">Secretary of Defense
+                <input type="radio" name="military" value="C" class ="q4"> The President <input type="radio" name="military" value="F" class ="q4"> Secretary of State</p>        
+        
+            <p id="Q5">5) Which of these is a right protected by the first amendment? <input type="radio" name="firstA" value="C" class ="q5">Freedom of Religion
+                <input type="radio" name="firstA" value="F" class ="q5"> The Right to Bear Arms <input type="radio" name="firstA" value="F" class ="q5"> The Right to Due Process</p>              
+        
+            <p id="Q6">6) Who wrote the Declaration of Independence? <input type="radio" name="Jefferson" value="F" class ="q6">George Washington
+                <input type="radio" name="Jefferson" value="F" class ="q6"> John Adams <input type="radio" name="Jefferson" value="C" class ="q6"> Thomas Jefferson</p>
+        
+            <p id="Q7">7) Who was President during WW1? <input type="radio" name="WW1" value="F" class ="q7">Theodore Roosevelt
+                <input type="radio" name="WW1" value="C" class ="q7"> Woodrow Wilson <input type="radio" name="WW1" value="F" class ="q7"> William McKinley</p>
+                
+            <p id="Q8">8) Why does the flag have 13 stripes? <input type="radio" name="flag" value="C" class ="q8">To Represent the 13 colonies
+                <input type="radio" name="flag" value="F" class ="q8"> Good Luck <input type="radio" name="flag" value="F" class ="q8"> To Represent the States</p>
+
+            <p id="Q9">9) What is the west coast ocean of the United States? <input type="radio" name="ocean" value="F" class ="q9">Indian
+                <input type="radio" name="ocean" value="C" class ="q9"> Pacific <input type="radio" name="ocean" value="F" class ="q9"> Atlantic</p>            
+    
+            <p id="Q10">10) Which European colonial power did the 13 colonies fight off for independence? <input type="radio" name="independence" value="F" class ="q10">France
+                <input type="radio" name="independence" value="F" class ="q10"> Spain <input type="radio" name="independence" value="C" class ="q10"> Great Britain</p> 
+
+            
+        
+        
+                <button class="btn btn-danger btn-lg" id="B2">Done!</button>
+
+            </div>
+
+            <div id="results">
+
+                <p>Correct Answers: <span id="CA">0</span></p>
+
+                <p>Incorrect Answers: <span id="IA">0</span></p>
+
+                <p>Unaswered: <span id="UA">0</span></p>
+
+                <div id="pass">Placeholder</div>
+
+
+
+            </div>
+
+            
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+
+
+    </body>
+
+</html>
